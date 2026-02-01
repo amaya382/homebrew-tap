@@ -5,13 +5,13 @@
 class Baretree < Formula
   desc "Centralized repository management with powerful Git worktree support"
   homepage "https://github.com/amaya382/baretree"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/amaya382/baretree/releases/download/v0.2.0/baretree_0.2.0_darwin_x86_64.tar.gz"
-      sha256 "95b10294673ae231aa2900ec9d67103ea3cebd3dd1d272dd4f44fc17dda40f7b"
+      url "https://github.com/amaya382/baretree/releases/download/v0.2.1/baretree_0.2.1_darwin_x86_64.tar.gz"
+      sha256 "89601c628406f1aa7fcbd035f5e69999e47016bab77ec2282ec6eea85a037366"
 
       def install
         bin.install "bt"
@@ -71,8 +71,8 @@ class Baretree < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/amaya382/baretree/releases/download/v0.2.0/baretree_0.2.0_darwin_arm64.tar.gz"
-      sha256 "6267f8f51473d8bc0d89a669a7f545a9f550d2883dda3686039f3677a0b0350e"
+      url "https://github.com/amaya382/baretree/releases/download/v0.2.1/baretree_0.2.1_darwin_arm64.tar.gz"
+      sha256 "d64af914fdf1c4726ada1da8e5f9fb5c942f5181efd8ae008a7cc42327ee4781"
 
       def install
         bin.install "bt"
@@ -135,8 +135,8 @@ class Baretree < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/amaya382/baretree/releases/download/v0.2.0/baretree_0.2.0_linux_x86_64.tar.gz"
-      sha256 "011b04144ea2592620ad6af0ff128e09de81d7088985ec50b1303f621e969dbd"
+      url "https://github.com/amaya382/baretree/releases/download/v0.2.1/baretree_0.2.1_linux_x86_64.tar.gz"
+      sha256 "d95187d897939f34e3710c2b8c6a0fad0236b798fde63395fd6ea4bef32d4e97"
       def install
         bin.install "bt"
 
@@ -195,8 +195,8 @@ class Baretree < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/amaya382/baretree/releases/download/v0.2.0/baretree_0.2.0_linux_arm64.tar.gz"
-      sha256 "79825306a406de2e1c1139a5d932e7264efb3121d61b011c701d11c69c00d01e"
+      url "https://github.com/amaya382/baretree/releases/download/v0.2.1/baretree_0.2.1_linux_arm64.tar.gz"
+      sha256 "bc49b95cecb7344ec2410cf2188a30bf1f1269b423db646a0c0e17ed397da391"
       def install
         bin.install "bt"
 
