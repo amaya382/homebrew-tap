@@ -5,15 +5,15 @@
 class Baretree < Formula
   desc "Centralized repository management with powerful Git worktree support"
   homepage "https://github.com/amaya382/baretree"
-  version "0.5.1"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/amaya382/baretree/releases/download/v0.5.1/baretree_0.5.1_darwin_x86_64.tar.gz"
-      sha256 "800abfccb94117001ca39a7b622ed6ea1d11d528d736ca1e43b7a4bc125c54f4"
+      url "https://github.com/amaya382/baretree/releases/download/v0.6.0/baretree_0.6.0_darwin_x86_64.tar.gz"
+      sha256 "9653da2cf12a0a51f83d90a1964c7541f33ac15266f30c87d91738dd5272fada"
 
-      def install
+      define_method(:install) do
         bin.install "bt"
 
         # Bash completion (Lazy load)
@@ -71,10 +71,10 @@ class Baretree < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/amaya382/baretree/releases/download/v0.5.1/baretree_0.5.1_darwin_arm64.tar.gz"
-      sha256 "38be12c1b9defaf41611a095a84408e54e20dcf0b9c44647bb1688c4ac2f173e"
+      url "https://github.com/amaya382/baretree/releases/download/v0.6.0/baretree_0.6.0_darwin_arm64.tar.gz"
+      sha256 "6e8bfdbdfd4843d60acbc6af854b6c20e8ba01c3461eeedaafd45a8d15e517ac"
 
-      def install
+      define_method(:install) do
         bin.install "bt"
 
         # Bash completion (Lazy load)
@@ -135,9 +135,9 @@ class Baretree < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/amaya382/baretree/releases/download/v0.5.1/baretree_0.5.1_linux_x86_64.tar.gz"
-      sha256 "feea6bea3876662868c00cf875eb7fc706706302582034febb4102baae97c111"
-      def install
+      url "https://github.com/amaya382/baretree/releases/download/v0.6.0/baretree_0.6.0_linux_x86_64.tar.gz"
+      sha256 "dcbc93849e4bd712bbe6be5896149ab2d93628f1b42039a1132a20814606709e"
+      define_method(:install) do
         bin.install "bt"
 
         # Bash completion (Lazy load)
@@ -195,9 +195,9 @@ class Baretree < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/amaya382/baretree/releases/download/v0.5.1/baretree_0.5.1_linux_arm64.tar.gz"
-      sha256 "f1d8999b620ceab6030b4f1e25db4431ce8d9efc355bd167423554ad4fd3965f"
-      def install
+      url "https://github.com/amaya382/baretree/releases/download/v0.6.0/baretree_0.6.0_linux_arm64.tar.gz"
+      sha256 "97918393a1299275951f620bacd8610349acac4bc8cd4b114fea317383781778"
+      define_method(:install) do
         bin.install "bt"
 
         # Bash completion (Lazy load)
