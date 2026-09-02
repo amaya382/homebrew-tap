@@ -1,10 +1,10 @@
 class SemanticDiffTracer < Formula
   desc "Grasp any GitHub PR fast: outcome-based perspectives with an LLM-powered story-mode debugger"
   homepage "https://github.com/amaya382/semantic-diff-tracer"
-  url "https://github.com/amaya382/semantic-diff-tracer/releases/download/0.0.2/semantic-diff-tracer-tui-0.0.2.tar.gz"
-  sha256 "453a0c4da2a79c9a40723ce6ce96f14e99c839c7c97147dc526ebbf2ed2094b3"
+  url "https://github.com/amaya382/semantic-diff-tracer/releases/download/0.0.3/semantic-diff-tracer-tui-0.0.3.tar.gz"
+  sha256 "5910be18aadaeeb7da6e9297b5aab6c015818a134f24accc6a95c22f4b3795a1"
   license "MIT"
-  version "0.0.2"
+  version "0.0.3"
 
   depends_on "node"
 
